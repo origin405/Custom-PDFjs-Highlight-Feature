@@ -203,8 +203,8 @@ This comprehensive approach to scenario handling ensures that the highlight tool
      overlapLeftHighlightCheck(preHighlightData, overlapHighlightsMaster);
      return overlapHighlightsMaster;
    }
-
-Traverse the DOM to find overlapped highlights:
+```
+   2. Traverse the DOM to find overlapped highlights:
 
 ```javascript
 function overlapLeftHighlightCheck(preHighlightData, overlapHighlightsMaster) {
@@ -242,9 +242,9 @@ function overlapLeftHighlightCheck(preHighlightData, overlapHighlightsMaster) {
 }
 ```
 
-Calculate the true start offset:
+   3. Calculate the true start offset:
 The tool calculates the absolute start offset by traversing backwards from the selection start point to the beginning of the original text node, accumulating text lengths along the way.
-Create a new range for highlighting:
+   4. Create a new range for highlighting:
 
 ```javascript
 function createNewRangeLeftOverlap(preHighlightData, overlappedHighlights) {
